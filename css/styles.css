@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
     font-size: 20px;
 }
 
@@ -15,8 +16,12 @@ header {
     color: #fff;
     padding: 20px;
 }
+header h2{
+    font-size: ;
+}
 
 header h1 {
+    text-align: center;
     margin: 0;
 }
 
@@ -29,6 +34,7 @@ section {
 }
 
 section h2 {
+    font-size: 35px;
     color: #333;
 }
 
@@ -46,23 +52,57 @@ section img {
     margin-top: 20px;
 }
 
-.cnh{
+.cnh {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-.cnh a{
+
+.cnh a {
     color: #fff;
 }
-#agendamento a{
+
+#agendamento a {
     padding: 1px;
     font-size: 20px;
     color: #333;
 }
+
 footer {
     background-color: #fff;
     color: #333;
     padding: 20px;
     text-align: center;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~#myImage {
+    display: none;
+}
+
+.toggleButton {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4bd3a3;
+    cursor: pointer;
+}
+
+.checkbox:checked+.toggleButton {
+    background-color: #e4eea2;
+}
+
+.checkbox:checked~.toggleButton::after {
+    content: "Abrir imagem";
+}
+
+.checkbox:not(:checked)~.toggleButton::after {
+    content: "Fechar imagem";
+}
+.o-que{
+    font-size: 25px;
+    padding: 2rem;
 }
