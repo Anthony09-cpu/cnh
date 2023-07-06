@@ -95,19 +95,18 @@ footer {
 .checkbox:checked+.toggleButton {
     background-color: #e4eea2;
 }
-
-.checkbox:checked~.toggleButton::after {
+.checkbox:checked ~ img{
+    display: block;
+}
+.checkbox:checked ~ .toggleButton::after {
     content: "Abrir imagem";
 }
 
-.checkbox:not(:checked)~.toggleButton::after {
+.checkbox:not(:checked) ~ .toggleButton::after {
     content: "Fechar imagem";
 }
+
 .o-que{
     font-size: 25px;
     padding: 2rem;
 }
-
-.checkbox:not(:checked) ~ #myImage {
-    display: none;
-  }
