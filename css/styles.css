@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 body {
-    background-image: radial-gradient(circle at 50% -20.71%, #ffffdb 0, #ffffd4 8.33%, #ffffce 16.67%, #f7fec7 25%, #e9fbc1 33.33%, #daf7bb 41.67%, #c9f2b5 50%, #b7edb1 58.33%, #a4e9af 66.67%, #91e5af 75%, #7ce2b1 83.33%, #66dfb4 91.67%, #4cdcb9 100%);
+    background-image: linear-gradient(180deg, #ffffaf 0, #ffffa6 25%, #f2f29d 50%, #d7dd94 75%, #bfca8b 100%);
     font-family: Poppins;
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ footer {
 .toggleButton {
     border-radius: 10px;
     padding: 10px;
-    background-color: #4bd3a3;
+    background-color: #c3c981;
     cursor: pointer;
 }
 
